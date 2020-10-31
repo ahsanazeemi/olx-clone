@@ -11,12 +11,13 @@ import Tab_Ads from '../Components/Home/Home_Components/Ads/tab_ads'
 import Tv_Ads from '../Components/Home/Home_Components/Ads/tv_ads'
 import House_Ads from '../Components/Home/Home_Components/Ads/house_ads'
 import Bike_Ads from '../Components/Home/Home_Components/Ads/bike_ads'
-
+import Show_Ad from '../Components/Show_ad'
 
 export default class Routers extends React.Component{
     render(){
         return(
             <Router>
+                
                 <Route exact path='/' component={Home} />
                 <Route path='/about' component={About} />
                 <Route path='/mobile-phones' component={Mobile_Ads} />
@@ -25,6 +26,7 @@ export default class Routers extends React.Component{
                 <Route path='/tablets' component={Tab_Ads} />
                 <Route path='/cars' component={Car_Ads} />
                 <Route path='/lands-and-plots' component={House_Ads} />
+                <Route path='/ads' component={Show_Ad} />
             </Router>
         )
     }

@@ -45,7 +45,7 @@
 
 .plus button{
   font-weight: bolder;
-  width: 115px;
+  width: 125px;
   padding: 5px 20px;
   font-size: 18px;
   border-radius: 35px;
@@ -250,8 +250,76 @@
   color: #002F34;
 }
 
+/* Show Ads */
+.main{
+  width: 96%;
+  padding: 20px;
+  height: 800px;
+  border: 3px solid #002F34;
+  margin: 20px auto;
+}
+.ad_details{
+  width: 32%;
+  height: 670px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 15px;
+  background: #EBEEEF;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  top: -325px;
+}
+.ad_details h1{
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+}
+.show{
+  width: 62%;
+  background: #EBEEEF;
+  border: 1px solid darkgray;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 15px;
+  padding: 20px;
+}
 
+.show img {
+  display: block;
+  text-align: center;
+  margin: 15px auto;
+  padding: 0;
+  width: 500px;
+  height: 600px;
 
+}
+
+@media only screen and (max-width: 1110px){
+  .show,.ad_details{
+    display: block !important;
+    width: 100% !important;
+  }
+  .main{
+    height: 100%;
+    width: 95%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+  .show{
+    margin: 5px auto;
+    padding: 5px;
+  }
+  .show img{
+    max-width: 600px !important;
+  }
+  .ad_details{
+    position: relative;
+    top: 0;
+    margin: 10px auto;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 768px){
   .select-input{
     width: 72% !important;
@@ -296,6 +364,19 @@
   .single_footer p img{
     width: 40px;
     display: inline;
+  }
+  .show img{
+    max-width: 180px !important;
+    height: 350px;
+  }
+  .ad_details h1{
+    font-size: 30px;
+  }
+  .ad_details h1{
+    font-size: 25px;
+  }
+  .ad_details h3{
+    font-size: 18px;
   }
 }
 
