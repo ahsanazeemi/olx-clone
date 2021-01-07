@@ -13,10 +13,12 @@ import {
 
  export default class House_Ads extends React.Component{
      render(){
+         
+         
          return(
             <div className='ext2'>
-            {this.props.show=='false' ?
-                console.log('nothing')
+            {this.props.show ==='false' ?
+                void(0)
             :
             <div>
                    <Header />
@@ -26,7 +28,7 @@ import {
             }
              <div className='home_divs'>
                  <h1>House for Rent and Sale Ads in Pakistan</h1>
-                 <div><Link to='/ads#40'>
+                 <div><Link className='top_link' to='/ads#40'>
                      <div >
                         <img src={home_1} className='ad_baner' width='170px' height='120px' />
                         <div>
@@ -61,8 +63,8 @@ import {
                      </div></Link>
                  </div>
              </div>
-             {this.props.show=='false' ?
-                     console.log('nothing')
+             {this.props.show ==='false' ?
+                     void(0)
                  :
                         <Footer />
                  }

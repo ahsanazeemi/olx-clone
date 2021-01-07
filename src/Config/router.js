@@ -12,6 +12,7 @@ import Tv_Ads from '../Components/Home/Home_Components/Ads/tv_ads'
 import House_Ads from '../Components/Home/Home_Components/Ads/house_ads'
 import Bike_Ads from '../Components/Home/Home_Components/Ads/bike_ads'
 import Show_Ad from '../Components/Show_ad'
+import Ads_Maker from '../Components/Home/ads-maker'
 
 export default class Routers extends React.Component{
     render(){
@@ -27,6 +28,7 @@ export default class Routers extends React.Component{
                 <Route path='/cars' component={Car_Ads} />
                 <Route path='/lands-and-plots' component={House_Ads} />
                 <Route path='/ads' component={Show_Ad} />
+                <Route path='/ads-maker' component={Ads_Maker} />
             </Router>
         )
     }

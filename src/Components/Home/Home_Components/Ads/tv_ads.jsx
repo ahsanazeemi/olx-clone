@@ -16,8 +16,8 @@ import {
      render(){
          return(
             <div className='ext2'>
-            {this.props.show=='false' ?
-                console.log('nothing')
+            {this.props.show ==='false' ?
+                void(0)
             :
             <div>
                    <Header />
@@ -62,8 +62,8 @@ import {
                      </div></Link>
                  </div>
              </div>
-             {this.props.show=='false' ?
-             console.log('nothing')
+             {this.props.show ==='false' ?
+            void(0)
          :
                 <Footer />
          }

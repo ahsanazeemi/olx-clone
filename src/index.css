@@ -56,7 +56,47 @@
   box-shadow: 10px;
   outline: none !important;
 }
+.minus button{
+  font-weight: bolder;
+  width: 125px;
+  padding: 5px 20px;
+  font-size: 18px;
+  border-radius: 35px;
+  border-top: 5px solid cyan;
+  border-left: 5px solid yellow;
+  border-right: 5px solid dodgerblue;
+  border-bottom: 5px solid dodgerblue;
+  box-shadow: 10px;
+  outline: none !important;
+}
 
+.login_img{
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+}
+.logout_button{
+  font-weight: bolder !important;
+  background:white;
+  border: none;
+  border: 2px solid #002F34;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 150px;
+  padding: 10px 15px;
+  color: #002F34;
+  border-radius: 10px;
+  outline: none !important;
+  font-size: 19px;
+  z-index: 1;
+  transition: 0.3s linear all ;
+}
+.logout_button:hover{
+  transform: translateY(-3px);
+  background: #002F34;
+  color: white;
+}
 /* Header Nav*/
 
 .header_nav,.navbar-light{
@@ -254,35 +294,36 @@
 .main{
   width: 96%;
   padding: 20px;
-  height: 800px;
+  height: auto;
   border: 3px solid #002F34;
   margin: 20px auto;
 }
 .ad_details{
-  width: 32%;
-  height: 670px;
+  width: 97%;
+  height: auto;
   border: 1px solid black;
   display: inline-block;
   margin: 15px;
-  background: #EBEEEF;
-  border: 1px solid darkgray;
-  border-radius: 20px;
+  background: #ffffff;
+  border: 5px solid #002F34;
+
   padding: 20px;
-  position: relative;
-  top: -325px;
+  font-family: Arial, Helvetica, sans-serif ;
+
 }
 .ad_details h1{
   font-family: Arial, Helvetica, sans-serif ;
   font-weight: bold;
 }
 .show{
-  width: 62%;
-  background: #EBEEEF;
+  width: 97%;
+  background: #000;
   border: 1px solid darkgray;
   border-radius: 20px;
-  display: inline-block;
+  display: block;
   margin: 15px;
   padding: 20px;
+  height: auto;
 }
 
 .show img {
@@ -290,9 +331,172 @@
   text-align: center;
   margin: 15px auto;
   padding: 0;
-  width: 500px;
-  height: 600px;
+  width: 65%;
+  
+  height: auto;
 
+}
+.but2{
+  background: white;
+  color: #002F34;
+  width: 170px;
+  padding: 8px;
+  border-style: none;
+  border: 2px solid #002F34;
+  font-size: 17px;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin: 15px;
+  text-align: center;
+  display: block;
+  transition: 0.1s linear all;
+  
+}
+.but2:hover{
+  cursor: pointer;
+  transform: translateY(-2px);
+  border: 2px solid #002F34;
+  color: white;
+  background: #002F34;
+}
+.but2 a{
+  width: 150px;
+  padding: 8px;
+  color: #002F34 !important;
+  text-decoration: none !important;
+}
+.but2 a:hover{
+  color: white !important;
+}
+/* Ads Maker */
+.olx-ads-logo{
+  display: block;
+  margin: 0 auto;
+  margin-top: -15px;
+  z-index: -1;
+}
+.ads-maker-div{
+  font-weight: bold;
+  margin: 25px auto;
+  margin-top: -15px;
+  width: 97%;
+  border: 5px solid #002F34;
+  height: auto;
+  overflow: hidden;
+  padding: 15px;
+}
+.ads-maker-div h1{
+  margin: 0;
+}
+.span-1{
+  display: block;
+  margin: 5px 0;
+  color: rgb(117, 117, 117);
+}
+.main-ads-maker{
+  border-radius: 20px;
+  background: #EBEEEF;
+  width: 100%;
+  padding: 20px;
+  margin: 10px auto;
+  height: auto;
+  overflow: hidden;
+  font-weight: normal;
+  border: 1px solid #707070;
+}
+.main-ads-maker label{
+  display: inline-block;
+  width: 30%;
+  font-size: 18px;
+  margin: 5px 0;
+}
+.main-ads-maker input{
+  width: 70%;
+  background: white;
+  color: #000;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 10px auto;
+}
+.main-ads-maker select{
+  width: 70%;
+  background: white;
+  color: #000;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 10px auto;
+}
+.ad-buttons{
+  margin: 30px 0px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.cancel-ad-button,.post-ad-button{
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px auto;
+  margin-right: 5px;
+  border: 2px solid #002F34;
+  outline: none !important;
+  border-radius: 10px;
+  font-weight: bolder;
+  background: white;
+  transition: 0.25s linear all;
+}
+.post-ad-button:hover,.cancel-ad-button:hover{
+  color: white;
+  background: #002F34;
+}
+.span-2{
+  color: red;
+  display: block;
+  margin: 5px ;
+  text-align: center;
+  display: none ;
+  font-size: 20px;
+}
+.span-2 span{
+  display: block;
+  margin-bottom: 10px;
+}
+.ads-maker-div-pending{
+  display: none;
+  font-weight: bold;
+  margin: 25px auto;
+  margin-top: -15px;
+  width: 97%;
+  border: 5px solid #002F34;
+  height: auto;
+  overflow: hidden;
+  padding: 25px;
+  text-align: center;
+}
+.ads-maker-div-pending i{
+  font-size: 120px;
+  margin: 10px auto;
+  margin-bottom: 30px;
+  color: #002F34
+}
+.ads-maker-div-pending h1{
+  margin: 10px auto;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+.ads-maker-div-pending p{
+  margin: 15px auto;
+  font-size: 20px;
+}
+.ads-maker-div-pending h2{
+  margin: 10px auto;
+  margin-top: 20px;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 1110px){
@@ -311,7 +515,7 @@
     padding: 5px;
   }
   .show img{
-    max-width: 600px !important;
+    width: 50% !important;
   }
   .ad_details{
     position: relative;
@@ -319,6 +523,9 @@
     margin: 10px auto;
     height: auto;
   }
+}
+.login-link:hover{
+  cursor: pointer;
 }
 @media only screen and (max-width: 768px){
   .select-input{
@@ -366,8 +573,8 @@
     display: inline;
   }
   .show img{
-    max-width: 180px !important;
-    height: 350px;
+    max-width: 100% !important;
+    height: auto;
   }
   .ad_details h1{
     font-size: 30px;
@@ -378,7 +585,83 @@
   .ad_details h3{
     font-size: 18px;
   }
+  .logout_button{
+    background:white;
+    border: none;
+    border: 2px solid #002F34;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    width: 90px;
+    padding: 5px 10px;
+    color: #002F34 !important;
+    border-radius: 10px;
+    outline: none !important;
+    font-size: 14px;
+    z-index: 1;
+    transition: 0.3s linear all ;
+  }
+  .logout_button:hover{
+    transform: translateY(-3px);
+    background: #002F34;
+    color: white;
+  }
+  .olx-ads-logo{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    margin-top: 0px;
+  }
+  .ads-maker-div{
+    border: 2px solid #002F34;
+    padding: 10px;
+  }
+  .ads-maker-div h1{
+    font-size: 22px;
+  }
+  .span-1{
+    font-size: 10px;
+  }
+  .main-ads-maker{
+    padding: 10px;
+  }
+  .main-ads-maker label{
+    width: 100%;
+    display: block;
+  }
+  .main-ads-maker input,.main-ads-maker select{
+    width: 100%;
+    font-size: 14px;
+  }
+  #ad-error div{
+    margin-bottom: 10px;
+  }
+  #ad-error span{
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .ads-maker-div-pending {
+    padding: 10px !important;
+  }
+  .ads-maker-div-pending i{
+    font-size: 60px;
+    margin: 0 !important;
+  }
+  .ads-maker-div-pending h1{
+    font-size: 30px;
+    margin: 10px auto !important;
+  }
+  .ads-maker-div-pending h2{
+    font-size: 25px;
+    margin: 10px auto !important;
+  }
+  .ads-maker-div-pending p{
+    font-size: 16px;
+    margin: 10px auto !important;
+  }
 }
+
+
 
 
 

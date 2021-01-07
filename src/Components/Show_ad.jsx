@@ -234,16 +234,28 @@ export default class Show_Ad extends React.Component{
                 <Header /> 
                 <Header_Nav />
                 <div className='main'>
+                
                 <div className='show'>
                     <img src={x} />
                 </div>
                 <div className='ad_details' >
-                    <h1>{arr[f][l].name}</h1>
-                    <h2><b>{arr[f][l].price}</b></h2>
-        <h3>Date : <b>{arr[f][l].date}</b></h3>
-                    <h3>Seller Name : OLX</h3>
-                    <p>Verified by <b>OLX</b></p>
-                    <p>Chat with Seller : +923011234567</p>
+                    <h1>{arr[f][l].price}</h1>
+                    <h4>Product Description:</h4>
+                    <p>{arr[f][l].name}</p>
+                    <p>Date : {arr[f][l].date}</p>
+                    
+
+
+                </div>
+                <div className='ad_details' >
+                    <h4>Seller Description:</h4>
+                    <p>NAME: <b>AHSAN AZEEMI</b></p>
+                    <p style={{
+                        wordWrap: 'break-word'
+                    }}>E-MAIL: copyright.ahsanazeemiofficial@gmail.com</p>
+                    <button className='but2'><a target='_blank' href='https://wa.me/923181236267'>Chat with Seller</a></button>
+                    <p style={{fontSize: 10}}>This Ad has been officialy verified by <b>OLX</b></p>
+
                 </div>
                 
                 
